@@ -1,0 +1,5 @@
+# This is the list of svn:externals in this directory.  If you want to
+# update the svn:externals property of this directory, use:
+#
+#   svn propset svn:externals -F EXTERNALS.txt .
+

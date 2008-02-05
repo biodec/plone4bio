@@ -1,0 +1,60 @@
+Requirements:
+=============
+
+1. PIL (aka python-imaging in most unix systems).
+
+2. python development files (it could be python-dev in unix systems).
+
+3. gcc and usual tools for compiling and installing.
+
+
+Installing a BioPlone site:
+===========================
+
+1. Run bootstrap.py with the python interpreter you want to use. This
+will install Buildout.
+
+  $ python2.4 bootstrap.py
+
+  or if you've used MacPorts for MacOSX to install your python 2.4:
+
+  $ /opt/local/bin/python2.4 bootstrap.py
+
+  or if you've used Fink for MacOSX to install your python 2.4:
+
+  $ /sw/bin/python2.4 bootstrap.py
+
+2. Edit the newly created buildout.cfg to select the profile you want to
+use; production, staging or development. For example:
+
+  [buildout]
+  extends = profiles/development.cfg
+  
+note: If you intend to run the development profile you don't need to
+change anything here.
+
+3. Run buildout
+
+  $ bin/buildout -v
+
+note: it may take some time ...
+
+4. Start up the instance
+
+  $ bin/instance fg
+  
+5. Log into the ZMI at http://localhost:8080/manage as (admin/admin).
+Create a Plone site and then go to the quickinstaller and install the
+following products:
+
+   plone4bio
+   plone4bio.predictor
+   plone4bio.prodiv
+  
+Now you should be able to add new Sequence types to your Plone site and
+to run the Prodiv (http://www.pdc.kth.se/~hakanv/prodiv-tmhmm/) code
+against it.
+
+6. To extend the BioPlone site with new predictors, refer to the
+skeleton code in plone4bio.predictor: you should be able to create a set
+of tools to run against your sequences.
