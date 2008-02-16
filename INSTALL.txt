@@ -47,14 +47,13 @@ note: it may take some time ...
 Create a Plone site and then go to the quickinstaller and install the
 following products:
 
-   plone4bio
-   plone4bio.predictor
-   plone4bio.prodiv
+   plone4bio.base
+   plone4bio.pscoils
   
 Now you should be able to add new Sequence types to your Plone site and
-to run the Prodiv (http://www.pdc.kth.se/~hakanv/prodiv-tmhmm/) code
+to run the pscoils (http://www.plone4bio.org/pscoils/) code
 against it.
 
 6. To extend the BioPlone site with new predictors, refer to the
-skeleton code in plone4bio.predictor: you should be able to create a set
+skeleton code in plone4bio.pscoils: you should be able to create a set
 of tools to run against your sequences.
