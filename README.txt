@@ -325,3 +325,10 @@ Configure Distutils to use MinGW
     is extremely useful if the build command is written down in a buildout
     recipe where you cannot change the options without hacking the recipe
     itself. The z2c.recipe.zope2install used in ploneout is one such example.
+
+Disclaimer
+----------
+
+  This product is produced independently from the product Plone, and carries no
+  guarantee from the Plone Foundation about quality, suitability or anything
+  else. The supplier of this product assumes all responsibility for it.
