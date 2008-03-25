@@ -4,5 +4,5 @@
 #   svn propset svn:externals -F EXTERNALS.txt .
 
 plone4bio.base https://www.plone4bio.org/svn/plone4bio.base/trunk
-biocomp.pscoils https://www.plone4bio.org/svn/plone4bio.pscoils/trunk
+biocomp.pscoils https://www.plone4bio.org/svn/biocomp.pscoils/trunk
 plone4bio.pscoils https://www.plone4bio.org/svn/plone4bio.pscoils/trunk
