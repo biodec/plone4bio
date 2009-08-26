@@ -3,6 +3,6 @@
 #
 #   svn propset svn:externals -F EXTERNALS.txt .
 
-^/plone4bio.base/trunk plone4bio.base
+^/plone4bio.base/tags/0.9 plone4bio.base
+^/plone4bio.pscoils/tags/0.9 plone4bio.pscoils
 ^/biocomp.pscoils/trunk biocomp.pscoils
-^/plone4bio.pscoils/trunk plone4bio.pscoils
