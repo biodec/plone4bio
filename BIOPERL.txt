@@ -1,0 +1,37 @@
+BioPerl Prerequisities
+======================
+
+Debian/Ubuntu
+-------------
+
+::
+
+Prerequisite packages:
+
+	sudo apt-get install perl bzip2 unzip curl
+	sudo apt-get install libconfig-ini-simple-perl libgd-gd2-perl
+
+	DON'T INSTALL THE BIOPERL PACKAGE PROVIDED BY YOUR DISTRIBUTION, 
+	UNLESS IT IS > 1.6.0 
+
+	WE NEED THE LATEST BIOPERL !!
+
+::
+
+Execute the following as root:
+
+	rm -rf BioPerl-1.6.0.tar.gz BioPerl-1.6.0
+	wget http://bioperl.org/DIST/BioPerl-1.6.0.tar.gz
+	tar zxvf BioPerl-1.6.0.tar.gz
+	cd BioPerl-1.6.0
+	perl Makefile.PL # you may safely answer yes to all the questions
+	make
+	sudo make install
+
+	rm -rf Bio-Graphics-1.93.tar.gz Bio-Graphics
+	wget http://search.cpan.org/CPAN/authors/id/L/LD/LDS/Bio-Graphics-1.93.tar.gz
+	tar zxvf Bio-Graphics-1.93.tar.gz
+	cd Bio-Graphics-1.93
+	perl Makefile.PL # you may safely answer yes to all the questions
+	make
+	sudo make install

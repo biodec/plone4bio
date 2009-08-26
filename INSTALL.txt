@@ -7,11 +7,19 @@ Requirements:
 
 3. gcc and usual tools for compiling and installing.
 
+4. BioPerl (optional) see BIOPERL.txt
+
 
 Installing a BioPlone site:
 ===========================
 
-1. Run bootstrap.py with the python interpreter you want to use. This
+1. Make a symbolic link buildout.cfg to select the profile you want to
+use; production, staging or development. For example:
+
+  $ rm buildout.cfg
+  $ ln -s demo.cfg buildout.cfg
+
+2. Run bootstrap.py with the python interpreter you want to use. This
 will install Buildout.
 
   $ python2.4 bootstrap.py
@@ -24,15 +32,6 @@ will install Buildout.
 
   $ /sw/bin/python2.4 bootstrap.py
 
-2. Edit the newly created buildout.cfg to select the profile you want to
-use; production, staging or development. For example:
-
-  [buildout]
-  extends = profiles/development.cfg
-  
-note: If you intend to run the development profile you don't need to
-change anything here.
-
 3. Run buildout
 
   $ bin/buildout -v
@@ -43,7 +42,10 @@ note: it may take some time ...
 
   $ bin/instance fg
   
-5. Log into the ZMI at http://localhost:8080/manage as (admin/admin).
+5. If you selected demo.cfg or postgresql.cfg on step 1 then you can stop here and open
+your browser at http://localhost:8080/plone4bio you can also login as manager (admin/admin)
+
+6. Log into the ZMI at http://localhost:8080/manage as (admin/admin).
 Create a Plone site and then go to the quickinstaller and install the
 following products:
 
@@ -54,6 +56,6 @@ Now you should be able to add new Sequence types to your Plone site and
 to run the pscoils (http://www.plone4bio.org/pscoils/) code
 against it.
 
-6. To extend the BioPlone site with new predictors, refer to the
+7. To extend the BioPlone site with new predictors, refer to the
 skeleton code in plone4bio.pscoils: you should be able to create a set
 of tools to run against your sequences.
