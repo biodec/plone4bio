@@ -7,6 +7,7 @@
 ^/plone4bio.biosql/trunk plone4bio.biosql
 ^/plone4biotheme.base/trunk plone4biotheme.base
 
-^/biocomp.pscoils/trunk biocomp.pscoils
+# ^/biocomp.pscoils/trunk biocomp.pscoils
+^/biocomp.pscoils/branches/biopython-enabled biocomp.pscoils
 ^/plone4bio.pscoils/trunk plone4bio.pscoils
 
