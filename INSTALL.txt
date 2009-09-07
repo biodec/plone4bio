@@ -9,6 +9,7 @@ Requirements:
 
 4. BioPerl (optional) see BIOPERL.txt
 
+5. postgres and/or mysql development files (optional) for plone4bio.biosql support.
 
 Installing a BioPlone site:
 ===========================
