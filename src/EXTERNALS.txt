@@ -6,7 +6,6 @@
 ^/plone4bio.base/trunk plone4bio.base
 ^/plone4bio.biosql/trunk plone4bio.biosql
 ^/plone4biotheme.base/trunk plone4biotheme.base
-https://src.biodec.com/antropologia/plone4bio.antropology/trunk plone4bio.antropology
 
 # ^/biocomp.pscoils/trunk biocomp.pscoils
 ^/biocomp.pscoils/branches/biopython-enabled biocomp.pscoils
