@@ -25,13 +25,13 @@ will install Buildout.
 
   $ python2.4 bootstrap.py
 
-  or if you've used MacPorts for MacOSX to install your python 2.4:
+  or if you've used MacPorts for MacOSX to install your python 2.6:
 
-  $ /opt/local/bin/python2.4 bootstrap.py
+  $ /opt/local/bin/python2.6 bootstrap.py
 
-  or if you've used Fink for MacOSX to install your python 2.4:
+  or if you've used Fink for MacOSX to install your python 2.6:
 
-  $ /sw/bin/python2.4 bootstrap.py
+  $ /sw/bin/python2.6 bootstrap.py
 
 3. Run buildout
 
