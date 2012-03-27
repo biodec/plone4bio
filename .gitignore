@@ -7,3 +7,5 @@ include
 lib
 parts
 var
+src
+develop-eggs
