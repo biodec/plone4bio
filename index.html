@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Plone4bio by biodec</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Plone4bio</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/biodec/plone4bio">View the Project on GitHub <small>biodec/plone4bio</small></a></p>
+        <ul>
+          <li><a href="https://github.com/biodec/plone4bio/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/biodec/plone4bio/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/biodec/plone4bio">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Welcome to the Plone4bio project</h1>
+
+<h2>What is Plone4bio</h2>
+
+<p>The plone4bio project provides a web-based integrated environment for the management and the analysis of biological sequence data. The plone4bio package provides the possibility by adding new content types to the  <a href="http://plone.org/">Plone CMS</a>: plone4bio runs either with Plone3 and Plone4, but we plan to develop new features only on the Plone4 trunk.</p>
+
+<p>The main new content type defined by plone4bio is the Sequence. The Sequence can be written by hand, imported from a FASTA file or accessed through a BioSQL database. The Sequence can then be visualized, showing its textual annotations data and its graphical features. It can be searched, using plone built-in search engine. Then it is possible to apply to the Sequence a program, called a predictor, that calculates the probabilities of the sequence to have a given property (the property that the predictor tries to determine) and to plot its results as new features or annotations. For example a predictor can try to assess if a protein sequence is trans-membrane, whether a signal peptide exists, and so on.
+Have a look at the demo site</p>
+
+<h2>Plone4bio demo site</h2>
+
+<p>We have set up a  plone4bio demo site to show the main features of the plone4bio package. On the demo site you can browse the Human fraction of the Uniprot database, the Human fraction of the NCBI database, access sequences of your interest, search through the site with the Livesearch feature of Plone and exploit the fact that sequences and CMS content are indexed together, use some sample searches that show the power of having a collection of data and documents indexed at the same time (have a look, for example, to the Aging or Deacetylase keywords).</p>
+
+<h2>Native BioSQL integration</h2>
+
+<p>We use the standard  BioSQL schema to store biological sequence data: one of the aims of plone4bio is to easy the way to access biological content for non-programmers, providing out-of-the-box an interface to a BioSQL compliant database.
+Software packages</p>
+
+<h2>Plone4bio is split in different pieces:</h2>
+
+<ul>
+<li>the plone4bio.buildout is the package to install to have a full plone4bio site running,</li>
+<li>the plone4bio.base is just the package that defines a skeleton predictor: deriving from that it is possible to integrate any other application and visualize all the results together,</li>
+<li>the plone4bio.biosql is the container for the code that implements the BioSQL integration,</li>
+<li>biocomp.pscoils is an example predictor, incapsulating the pscoils algorithm by Fariselli et al. available at  <a href="http://www.biocomp.unibo.it/">http://www.biocomp.unibo.it/</a> It is intended both as an example on how to integrate one's own predictor in the plone4bio framework and as a ready-to-use predictor for coiled-coils. </li>
+</ul><h2>Further information</h2>
+
+<ul>
+<li>Installation information</li>
+<li>Extra: Bioperl</li>
+<li>Documentation</li>
+<li>A note about searching</li>
+<li>Some nice pictures</li>
+<li>The Plone4bio manifesto</li>
+<li>How to report bugs </li>
+</ul><p>This product is produced independently from the  Plone CMS, and carries no guarantee from the Plone Foundation about quality, suitability or anything else. The supplier of this product assumes all responsibility for it.</p>
+
+<p>Plone4bio is a  <a href="http://www.biodec.com/">BioDec</a> project.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/biodec">biodec</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
